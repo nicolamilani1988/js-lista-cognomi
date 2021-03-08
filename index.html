@@ -6,9 +6,13 @@
   </head>
   <body>
 
-    <h1 id="title">
-      HELLO WORLD
-    </h1>
+    <h1 id="title-d"></h1>
+    <h1 id="title"></h1>
+
+
+    <h3 id="elenco1"></h3>
+    <h3 id="elenco2"></h3>
+    <h3 id="elenco3"></h3>
 
     <script type="text/javascript">
 
@@ -21,11 +25,14 @@
         console.log(array);
       }
 
+      document.getElementById("title-d").innerHTML = "Lista di cognomi disordinata: " + array;
       array.sort();
       console.log("Ordinato ",array);
+      document.getElementById("title").innerHTML = "Lista di cognomi ordinata: " + array;
 
       for (var i = 0; i < array.length; i++) {
         console.log(array[i] , "nell' elenco è in posizione numero " + (i+1));
+        document.getElementById("elenco" + (i+1)).innerHTML = array[i] + " nell' elenco è in posizione numero " + (i+1);
       }
 
 
