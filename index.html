@@ -15,10 +15,10 @@
       var array = [];
 
       for (i=0 ; i<3 ; i++){
-        var surname = prompt("Dimmi un cognome");
+        var surnameCapsLock = prompt("Dimmi un cognome");
+        var surname = surnameCapsLock.toLowerCase();
         array.push(surname);
         console.log(array);
-
       }
 
       array.sort();
