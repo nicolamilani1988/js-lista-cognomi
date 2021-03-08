@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    <h1 id="title">
+      HELLO WORLD
+    </h1>
+
+    <script type="text/javascript">
+
+      var array = [];
+
+      for (i=0 ; i<3 ; i++){
+        var surname = prompt("Dimmi un cognome");
+        array.push(surname);
+        console.log(array);
+
+      }
+
+      array.sort();
+      console.log("Ordinato ",array);
+
+      for (var i = 0; i < array.length; i++) {
+        console.log(array[i] , "nell' elenco è in posizione numero " + (i+1));
+      }
+
+
+
+
+    </script>
+
+  </body>
+</html>
