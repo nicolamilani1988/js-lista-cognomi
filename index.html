@@ -37,21 +37,24 @@
 
 
       // Versione corretta
-      var array = ["pino", "gino"];
-      var surnameCapsLock = prompt("Dimmi un cognome");
-      var surname = surnameCapsLock.toLowerCase();
-      array.push(surname);
-      console.log(surname, array);
+      var arrayCapsLock = ["Pino", "Gino"];
+      var array = [];
+      var surname = prompt("Dimmi un cognome");
+
+      arrayCapsLock.push(surname);
+      console.log(arrayCapsLock);
+
+      for(var i=0;i<arrayCapsLock.length;i++){
+        var surname = arrayCapsLock[i].toLowerCase();
+        array.push(surname);
+      }
       array.sort();
       console.log(array);
-
-
 
       for (var i = 0; i < array.length; i++) {
         if (surname == array[i]){
           console.log("posizione " + [i+1]);
           document.getElementById("title-d").innerHTML = "Posizione " + [i+1];
-
         }
       }
 
