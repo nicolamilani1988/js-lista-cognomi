@@ -16,24 +16,45 @@
 
     <script type="text/javascript">
 
-      var array = [];
+      // var array = [];
+      //
+      // for (i=0 ; i<3 ; i++){
+      //   var surnameCapsLock = prompt("Dimmi un cognome");
+      //   var surname = surnameCapsLock.toLowerCase();
+      //   array.push(surname);
+      //   console.log(array);
+      // }
+      //
+      // document.getElementById("title-d").innerHTML = "Lista di cognomi disordinata: " + array;
+      // array.sort();
+      // console.log("Ordinato ",array);
+      // document.getElementById("title").innerHTML = "Lista di cognomi ordinata: " + array;
+      //
+      // for (var i = 0; i < array.length; i++) {
+      //   console.log(array[i] , "nell' elenco è in posizione numero " + (i+1));
+      //   document.getElementById("elenco" + (i+1)).innerHTML = array[i] + " nell' elenco è in posizione numero " + (i+1);
+      // }
 
-      for (i=0 ; i<3 ; i++){
-        var surnameCapsLock = prompt("Dimmi un cognome");
-        var surname = surnameCapsLock.toLowerCase();
-        array.push(surname);
-        console.log(array);
-      }
 
-      document.getElementById("title-d").innerHTML = "Lista di cognomi disordinata: " + array;
+      // Versione corretta
+      var array = ["pino", "gino"];
+      var surnameCapsLock = prompt("Dimmi un cognome");
+      var surname = surnameCapsLock.toLowerCase();
+      array.push(surname);
+      console.log(surname, array);
       array.sort();
-      console.log("Ordinato ",array);
-      document.getElementById("title").innerHTML = "Lista di cognomi ordinata: " + array;
+      console.log(array);
+
+
 
       for (var i = 0; i < array.length; i++) {
-        console.log(array[i] , "nell' elenco è in posizione numero " + (i+1));
-        document.getElementById("elenco" + (i+1)).innerHTML = array[i] + " nell' elenco è in posizione numero " + (i+1);
+        if (surname == array[i]){
+          console.log("posizione " + [i+1]);
+          document.getElementById("title-d").innerHTML = "Posizione " + [i+1];
+
+        }
       }
+
 
 
 
